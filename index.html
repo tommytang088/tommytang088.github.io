@@ -1,7 +1,99 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<header class="header">
+		<img class="header-logo" src="images/logo2.png" alt="logo">
+		<section class="header-title">
+			<h1 class="text-right">Tommy Tang</h1>
+			<h3 class="text-right">Front-End Assassin</h3>
+		</section>
+	</header>
+	<main>
+		<section class="content">
+			<section class="welcome">
+				<article class="description">
+					<h3>Welcome to My Portfolio Site</h3>
+					<p>New projects are coming soon ...</p>
+				</article>
+			</section>
+			<section class="library-header">
+				<h3>Featured Work</h3>
+			</section>
+			<section class="library-game">
+				<img class="library-img" src="images/assassins_creed_1-medium.jpg" alt="assassins creed 1" srcset="images/assassins_creed_1-small.jpg 400w, images/assassins_creed_1-medium.jpg 700w" sizes="(max-width: 699px) 100vw, (min-width: 700px) 33.33vw" data-toggle="modal" data-target="#game1">
+				<h4 class="text-center"><a href="https://www.ubisoft.com/en-US/game/assassins-creed/" target="_blank">Assassin's Creed</a></h4>
+			</section>
+			<section class="library-game">
+				<img class="library-img" src="images/assassins_creed_2-medium.jpg" alt="assassins creed 2" srcset="images/assassins_creed_2-small.jpg 400w, images/assassins_creed_2-medium.jpg 700w" sizes="(max-width: 699px) 100vw, (min-width: 700px) 33.33vw" data-toggle="modal" data-target="#game2">
+				<h4 class="text-center"><a href="http://assassinscreed.ubi.com/en-us/games/assassins-creed-2.aspx" target="_blank">Assassin's Creed II</a></h4>
+			</section>
+			<section class="library-game">
+				<img class="library-img" src="images/assassins_creed_4-medium.jpg" alt="assassins creed 4" srcset="images/assassins_creed_4-small.jpg 400w, images/assassins_creed_4-medium.jpg 700w" sizes="(max-width: 699px) 100vw, (min-width: 700px) 33.33vw" data-toggle="modal" data-target="#game3">
+				<h4 class="text-center"><a href="http://assassinscreed.ubi.com/en-us/games/assassins-creed-black-flag.aspx" target="_blank">Assassin's Creed IV: Black Flag</a></h4>
+			</section>
+		</section>
+	</main>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="game1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Assassin's Creed</h4>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" alt="assassins creed 1 modal" src="images/assassins_creed_1-large.jpg" srcset="images/assassins_creed_1-small.jpg 400w, images/assassins_creed_1-medium.jpg 700w, images/assassins_creed_1-large.jpg 1200w" sizes="100vw">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="game2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Assassin's Creed II</h4>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" alt="assassins creed 2 modal" src="images/assassins_creed_2-large.jpg" srcset="images/assassins_creed_2-small.jpg 400w, images/assassins_creed_2-medium.jpg 700w, images/assassins_creed_2-large.jpg 1200w" sizes="100vw">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="game3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Assassin's Creed IV: Black Flag</h4>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" alt="assassins creed 4 modal" src="images/assassins_creed_4-large.jpg" srcset="images/assassins_creed_4-small.jpg 400w, images/assassins_creed_4-medium.jpg 700w, images/assassins_creed_4-large.jpg 1200w" sizes="100vw">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
